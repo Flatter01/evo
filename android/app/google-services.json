@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "532083701829",
+    "project_id": "evo-app-669b1",
+    "storage_bucket": "evo-app-669b1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532083701829:android:003313fdd259b74fb68b2c",
+        "android_client_info": {
+          "package_name": "com.example.evo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532083701829-9jrommfbb13063okk2j1abfqm6q4rar0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.evo",
+            "certificate_hash": "7077b402a2b2ceb883fb5844ff82b34614fe0c44"
+          }
+        },
+        {
+          "client_id": "532083701829-1cn879s1d8ipu42i641mfm5o8oafe43f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm3fykpvzarV3EE7oPCHxYu-Wx9qX5CRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532083701829-1cn879s1d8ipu42i641mfm5o8oafe43f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "532083701829-g04t0g1vol7ergina53bk3qfpbft9k3b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.evo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

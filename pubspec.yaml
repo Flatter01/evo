@@ -1,0 +1,68 @@
+name: evo
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # firebase
+  firebase_core: ^3.15.1
+  firebase_auth: ^5.6.2
+  google_sign_in: ^6.2.1
+
+  # data
+  dio: ^5.8.0+1
+  retrofit: ^4.0.1
+  json_annotation: ^4.9.0
+  injectable: ^2.4.1
+  get_it: ^7.6.7
+
+
+  # utils
+  talker_flutter: ^4.9.2
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+  build_runner: ^2.4.9
+  retrofit_generator: ^8.0.1
+  json_serializable: ^6.7.1
+  injectable_generator: ^2.4.1
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/logo/
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo/logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/logo/logo.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/logo/logo.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/logo/logo.png"
