@@ -4,9 +4,14 @@ class TopBusiness extends StatelessWidget {
   final int index;
   final String image;
   final String description;
-   final VoidCallback onTap;
+  final VoidCallback onTap;
 
-  const TopBusiness({super.key,required this.index,required this.onTap, required this.image, required this.description});
+  const TopBusiness(
+      {super.key,
+      required this.index,
+      required this.onTap,
+      required this.image,
+      required this.description});
 
   @override
   Widget build(BuildContext context) {
@@ -34,10 +39,12 @@ class TopBusiness extends StatelessWidget {
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.grey[300],
-                borderRadius:
-                    const BorderRadius.vertical(top: Radius.circular(12)),
+                borderRadius: const BorderRadius.vertical(
+                  top: Radius.circular(12),
+                ),
               ),
-              child: Image.network(image,fit: BoxFit.cover),
+              clipBehavior: Clip.antiAlias,
+              child: Image.network(image, fit: BoxFit.cover),
             ),
             // Название
             Padding(

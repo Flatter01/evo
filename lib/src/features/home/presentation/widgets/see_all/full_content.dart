@@ -1,4 +1,4 @@
-import 'package:evo/src/core/app_colors.dart';
+import 'package:evo/src/core/colors/app_colors.dart';
 import 'package:evo/src/features/home/presentation/widgets/see_all/business_see_all.dart';
 import 'package:flutter/material.dart';
 
@@ -20,8 +20,8 @@ class FullContent extends StatelessWidget {
         Text(
           info,
           style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w700,
+            fontSize: 20,
+            fontWeight: FontWeight.w800,
             color: AppColors.stoneGrey,
           ),
         ),

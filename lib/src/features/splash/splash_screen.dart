@@ -1,6 +1,7 @@
-import 'package:evo/src/core/app_colors.dart';
+import 'package:evo/src/core/colors/app_colors.dart';
 import 'package:evo/src/features/auth/screen/google_login_screen.dart';
 import 'package:evo/src/features/home/presentation/home_page.dart';
+import 'package:evo/src/features/navBar/custom_bottom_bar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     Navigator.of(context).pushReplacement(
       PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) =>
-            user != null ? const HomePage() : const GoogleLoginScreen(),
+            user != null ? const CustomBottomNavExact() : const GoogleLoginScreen(),
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           return FadeTransition(opacity: animation, child: child);
         },

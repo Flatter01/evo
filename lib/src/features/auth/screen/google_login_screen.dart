@@ -1,4 +1,4 @@
-import 'package:evo/src/core/app_colors.dart';
+import 'package:evo/src/core/colors/app_colors.dart';
 import 'package:evo/src/features/auth/service/google_auth.dart';
 import 'package:evo/src/features/home/presentation/home_page.dart';
 import 'package:flutter/material.dart';
@@ -36,13 +36,17 @@ class _GoogleLoginScreenState extends State<GoogleLoginScreen> {
         child: Center(
           child: GestureDetector(
             onTap: () async {
-              bool result =
+              String? idToken =
                   await FirebaseServices(_googleSignIn).signInWithGoogle();
-              if (result) {
-                // Navigator.pushReplacement(
-                //   context,
-                //   MaterialPageRoute(builder: (_) => const HomePage()),
-                // );
+
+              if (idToken != null) {
+                // TODO: отправь токен на свой Django-бекенд
+                print("ID Token: $idToken");
+
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (_) => const HomePage()),
+                );
               } else {
                 ScaffoldMessenger.of(context)
                     .showSnackBar(SnackBar(content: Text("Ошибка входа")));

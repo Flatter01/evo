@@ -16,18 +16,22 @@ class BusinessService {
   }
 
 Future<void> addBusiness({
+  required String image,
+  required String name,
+  required String description,
   required String userFullName,
   required String userPhone,
-  required String description,
-  required String photoPath,
-  required int categoryId, // 👈 добавить параметр
+  required String location,
+  required int categoryId,
 }) async {
   final formData = FormData.fromMap({
+    'image': await MultipartFile.fromFile(image, filename: 'photo.jpg'),
+    'name' : name,
+    'description': description,
     'user_full_name': userFullName,
     'user_phone': userPhone,
-    'description': description,
-    'categoryId': categoryId.toString(), // 👈 обязательно
-    'photo': await MultipartFile.fromFile(photoPath, filename: 'photo.jpg'),
+    'location' : location,
+    'category': categoryId.toString(), // 👈 обязательно
   });
 
   await _dio.post('businesses/', data: formData);

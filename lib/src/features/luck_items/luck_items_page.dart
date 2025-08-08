@@ -1,4 +1,4 @@
-import 'package:evo/src/core/app_colors.dart';
+import 'package:evo/src/core/colors/app_colors.dart';
 import 'package:evo/src/features/home/presentation/widgets/business/business_card.dart';
 import 'package:evo/src/features/home/presentation/widgets/business/business_detail.dart';
 import 'package:flutter/material.dart';
@@ -9,10 +9,6 @@ class LuckItemsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Business"),
-        backgroundColor: AppColors.backgroundColor,
-      ),
       backgroundColor: AppColors.backgroundColor,
       body: SingleChildScrollView(
         child: GridView.builder(

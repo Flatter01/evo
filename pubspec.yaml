@@ -21,14 +21,12 @@ dependencies:
   # data
   dio: ^5.8.0+1
   retrofit: ^4.0.1
-  json_annotation: ^4.9.0
-  injectable: ^2.4.1
-  get_it: ^7.6.7
-
 
   # utils
   talker_flutter: ^4.9.2
   image_picker: ^1.1.2
+  google_nav_bar: ^5.0.7
+  lottie: ^3.3.1
 
 dev_dependencies:
   flutter_test:
@@ -36,9 +34,6 @@ dev_dependencies:
   flutter_lints: ^5.0.0
   flutter_launcher_icons: ^0.14.4
   build_runner: ^2.4.9
-  retrofit_generator: ^8.0.1
-  json_serializable: ^6.7.1
-  injectable_generator: ^2.4.1
 
 
 flutter:
@@ -47,6 +42,7 @@ flutter:
   assets:
     - assets/
     - assets/logo/
+    - assets/lottie/
 
 
 flutter_launcher_icons:

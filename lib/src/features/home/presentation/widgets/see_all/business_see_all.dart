@@ -1,4 +1,4 @@
-import 'package:evo/src/core/app_colors.dart';
+import 'package:evo/src/core/colors/app_colors.dart';
 import 'package:evo/src/features/home/data/business_service.dart';
 import 'package:evo/src/features/home/data/model/business_model.dart';
 import 'package:evo/src/features/home/presentation/widgets/business/business_card.dart';

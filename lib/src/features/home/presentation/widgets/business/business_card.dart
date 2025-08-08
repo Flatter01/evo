@@ -6,12 +6,17 @@ class BusinessCard extends StatelessWidget {
   final VoidCallback onTap;
   final String description;
 
-  const BusinessCard({super.key, required this.index,required this.onTap,required this.image,required this.description});
+  const BusinessCard(
+      {super.key,
+      required this.index,
+      required this.onTap,
+      required this.image,
+      required this.description});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap:onTap,
+      onTap: onTap,
       child: Container(
         width: 150,
         margin: const EdgeInsets.symmetric(horizontal: 8),
@@ -35,9 +40,11 @@ class BusinessCard extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.grey[300],
                 borderRadius:
-                    const BorderRadius.vertical(top: Radius.circular(12)),
+                    const BorderRadius.vertical(top: Radius.circular(13)),
               ),
-              child: Image.network(image,fit: BoxFit.cover),
+                clipBehavior: Clip.antiAlias,
+
+              child: Image.network(image, fit: BoxFit.cover),
             ),
             // Название
             Padding(
